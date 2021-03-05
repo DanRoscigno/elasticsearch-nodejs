@@ -1,0 +1,23 @@
+{
+  "name": "elasticsearch-nodejs",
+  "version": "1.0.0",
+  "description": "Simple Node example interacting with Elasticsearch",
+  "main": "helloworlds.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanRoscigno/elasticsearch-nodejs.git"
+  },
+  "author": "Dan Roscigno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanRoscigno/elasticsearch-nodejs/issues"
+  },
+  "homepage": "https://github.com/DanRoscigno/elasticsearch-nodejs#readme",
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.11.0",
+    "config": "^3.3.4"
+  }
+}
