@@ -16,8 +16,12 @@ npm install config
 Gather your configuration details from the Elastic cloud console and populate
 whatever configuration file you use, this example shows what the above `config` package expects.
 
+```
 mkdir config
 vi config/default.json
+```
+
+`config/default.json`:
 ```
 {
   "elastic": {
