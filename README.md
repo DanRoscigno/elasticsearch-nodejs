@@ -38,4 +38,21 @@ vi config/default.json
 }
 ```
 
-A sample helloWorld.json is included in this repo, it is straight from the docs at https://github.com/elastic/elasticsearch-js#quick-start (with the addition of the config file)
+A sample `helloWorld.json` is included in this repo, it is straight from the docs at https://github.com/elastic/elasticsearch-js#quick-start (with the addition of the config file)
+
+```
+node helloWorld.json
+```
+
+Output:
+```
+[
+  {
+    _index: 'game-of-thrones',
+    _type: '_doc',
+    _id: 'DBzq_ncBZE2R_LhmSSTs',
+    _score: 1.3546093,
+    _source: { character: 'Ned Stark', quote: 'Winter is coming.' }
+  }
+]
+```
