@@ -1,7 +1,7 @@
 # elasticsearch-nodejs
 
 ## Deploy the Elastic Stack
-I use cloud.elastic.co, it is super easy.  The config file shown later on uses a `cloudID` to specify the connection to Elasticsearch.  If you are deploying in Kubernetes, or bare metal, or some other way modify the connection details as needed.  All of the specifics are in the documenttion at https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/basic-config.html
+I use cloud.elastic.co, it is super easy.  The config file shown later on uses a `cloudID` to specify the connection to Elasticsearch.  If you are deploying in Kubernetes, or bare metal, or some other way modify the connection details as needed.  All of the specifics are in the documentation at https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/basic-config.html
 
 
 ## Create the npm package.json
