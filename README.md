@@ -99,3 +99,29 @@ Output is:
 bng5T0VuZ0JaRTJSX0xobUtKZ0c6ek1XS2FkeTVUNE94YUpXQXVYQ2dCZw==
 ```
 
+Edit the configuration file created earlier and add the above API Key
+
+`config/default.json`:
+```
+{
+  "elastic": {
+    "cloudID": "deploymentname:deploymentconnectiondetails",
+    "username": "elastic",
+    "password": "longpassword"
+    "apiKey": "bng5T0VuZ0JaRTJSX0xobUtKZ0c6ek1XS2FkeTVUNE94YUpXQXVYQ2dCZw=="
+  }
+}
+```
+
+Now the API Key can be used in place of the username and password.  The client connection becomes:
+
+```
+const client = new Client({
+  cloud: {
+    id: elasticConfig.cloudID
+  },
+  auth: {
+    apiKey: elasticConfig.apiKey
+  }
+})
+```
