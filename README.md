@@ -56,3 +56,46 @@ Output:
   }
 ]
 ```
+
+## Switch to using an API Key
+Up above the authentication to Elasticsearch was done by using the `elastic`
+username and password.  Using API Keys are a best practice, see the docs at .......
+
+```
+POST /_security/api_key
+{
+  "name": "gameofthrones_example",
+  "role_descriptors": {
+    "nodejs_example_writer": {
+      "cluster": ["monitor"],
+      "index": [
+        {
+          "names": ["game-of-thrones"],
+          "privileges": ["all"]
+        }
+      ]
+    }
+  }
+}
+```
+
+Output is:
+```
+{
+  "id" : "nx9OEngBZE2R_LhmKJgG",
+  "name" : "nodejs_example",
+  "api_key" : "zMWKady5T4OxaJWAuXCgBg"
+}
+```
+
+To use the above key in your Node.js code, concatenate the `id` and `api_key`
+values (with a `:` seperator) like so:
+```
+echo -n 'nx9OEngBZE2R_LhmKJgG:zMWKady5T4OxaJWAuXCgBg' | base64
+```
+
+Output is:
+```
+bng5T0VuZ0JaRTJSX0xobUtKZ0c6ek1XS2FkeTVUNE94YUpXQXVYQ2dCZw==
+```
+
