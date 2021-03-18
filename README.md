@@ -89,7 +89,7 @@ Output is:
 ```
 
 To use the above key in your Node.js code, concatenate the `id` and `api_key`
-values (with a `:` separator) like so:
+values (with a `:` separator) and pipe the string to `base64` like so:
 ```
 echo -n 'nx9OEngBZE2R_LhmKJgG:zMWKady5T4OxaJWAuXCgBg' | base64
 ```
