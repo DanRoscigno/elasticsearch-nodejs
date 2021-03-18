@@ -107,7 +107,7 @@ Edit the configuration file created earlier and add the above API Key
   "elastic": {
     "cloudID": "deploymentname:deploymentconnectiondetails",
     "username": "elastic",
-    "password": "longpassword"
+    "password": "longpassword",
     "apiKey": "bng5T0VuZ0JaRTJSX0xobUtKZ0c6ek1XS2FkeTVUNE94YUpXQXVYQ2dCZw=="
   }
 }
