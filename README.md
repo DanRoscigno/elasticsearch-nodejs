@@ -99,16 +99,21 @@ Output is:
 bng5T0VuZ0JaRTJSX0xobUtKZ0c6ek1XS2FkeTVUNE94YUpXQXVYQ2dCZw==
 ```
 
-Edit the configuration file created earlier and add the above API Key
-
+Edit the configuration file created earlier and add the above API Key.  You can have more than one set of configurations, below is one for Cloud and one for self managed:
 `config/default.json`:
 ```
 {
-  "elastic": {
+  "elastic-cloud": {
     "cloudID": "deploymentname:deploymentconnectiondetails",
     "username": "elastic",
     "password": "longpassword",
-    "apiKey": "bng5T0VuZ0JaRTJSX0xobUtKZ0c6ek1XS2FkeTVUNE94YUpXQXVYQ2dCZw=="
+    "apiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX=="
+  },
+  "elastic-self-managed": {
+    "node": "https://192.168.33.26:9200",
+    "username": "elastic",
+    "password": "changeme",
+    "apiKey": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZzzzzzzzzz=="
   }
 }
 ```
